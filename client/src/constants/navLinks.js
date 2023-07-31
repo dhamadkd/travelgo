@@ -8,6 +8,10 @@ export const navLinks = [
     url: '/tours'
   },
   {
+    text: 'contact us',
+    url: '/contact'
+  },
+  {
     text: 'login',
     url: '/login'
   }

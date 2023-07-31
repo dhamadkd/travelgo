@@ -7,8 +7,8 @@ const AboutUs = () => {
     <AboutUsWrapper className='body-container extra-margin'>
       <div className='about-text'>
         <Title title='About Us' />
-        <h3>We are Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid magni.</h3>
-        <p>Our team Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dignissimos neque quis, tempore aliquam expedita unde similique libero et totam ipsum praesentium necessitatibus, facilis provident ducimus quas! Aliquam, odit cupiditate. Dolores, dignissimos neque quis, tempore aliquam expedita unde similique libero et totam ipsum praesentium necessitatibus, facilis provident ducimus quas! Aliquam, odit cupiditate.</p>
+        <h3>We Provide Best Tour Packages In Your Budget</h3>
+        <p>We help you plan and travel to your favourite destinations. We make all arrangements to make your travel smooth and within best of budget. You just choose dates and we set itinerary so you never miss out on the must do places.</p>
         <p>Read more <span>&#8594;</span></p>
       </div>
       <div className='about-image'>

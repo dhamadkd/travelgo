@@ -7,6 +7,7 @@ import { store } from './redux/store';
 import Header from './components/nav/Header';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import ContactPage from './pages/ContactPage';
 import history from './history';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import ForgotPwdConfirmPage from './pages/ForgotPwdConfirmPage';
@@ -58,6 +59,7 @@ const App = () => {
       <Route exact path='/admin/tours/create' component={TourCreate} />
       <Route path='/admin/tours/edit/:id' component={TourEdit} />
       <Route path='/admin/tours/delete/:id' component={TourDelete} />
+      <Route path='/contact' component={ContactPage} />
     </div>
   )
 

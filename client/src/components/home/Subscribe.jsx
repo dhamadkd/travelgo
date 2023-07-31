@@ -1,21 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
+import history from '../../history';
+
+const handleClick = () => {
+    history.push("/contact");
+}
 
 const Subscribe = () => {
   return (
     <SubscribeWrapper className='extra-margin'>
     <SubscribeContent>
       <SubscribeBody>
-        <h2>Stay in touch</h2>
-        <p>Subscribe to ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima, harum necessitatibus iste praesentium quod cupiditate aperiam!</p>
+        <h2>Get in Touch</h2>
+        <p>To plan your next trip, provide your details and we will connect with itenarary that suits you best</p>
       </SubscribeBody>
       <SubscribeInput>
-        <form>
-          <input
-            placeholder='This does not work'
-            type='email'
+        <form >
+          {/* <input
+            placeholder='Name'
+            type='name'
           />
-          <button>Subscribe</button>
+          <input
+            placeholder='Phone Number'
+            type='phone' required = 'true'
+          />
+          <input
+            placeholder='Email'
+            type='email'
+          /> */}
+          <button onClick={handleClick}>Contact Us</button>
         </form>
       </SubscribeInput>
     </SubscribeContent>
@@ -88,12 +101,12 @@ const SubscribeInput = styled.div`
 
   @media (min-width: 768px) {
     input {
-      margin-bottom: 0;
+      margin-bottom: 5;
       width: 15rem;
     }
 
     form {
-      flex-direction: row;
+      flex-direction: column;
       width: auto;
     }
 

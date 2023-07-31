@@ -42,7 +42,10 @@ const Header = (props) => {
 
   return (
     <HeaderWrapper home={props.home}>
+     
       <div className='body-container'>
+        {/* <Contact />
+        <br></br> */}
         <Logo />
         <NavsList>
           {renderLinks}

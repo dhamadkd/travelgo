@@ -128,3 +128,24 @@ export const imageForm = [
     type:'file'
   }
 ]
+
+export const contactusForm = [
+  {
+    name: 'name',
+    label: 'Name',
+    type: 'text',
+    placeholder:'Name'
+  },
+  {
+    name: 'email',
+    label: 'Email ID',
+    type: 'text',
+    placeholder: 'Email ID'
+  },
+  {
+    name: 'phone',
+    label: 'Phone Number',
+    type: 'phone',
+    placeholder:'Phone Number'
+  }
+];

@@ -7,7 +7,7 @@ const Logo = ({ largeLogo, light }) => {
     <LogoWrapper large={largeLogo} light={light}>
       <Link to='/'>
         <img src='/logo.png' alt='Logo' />
-        <span>GoTravel</span>
+        <span>HOOK A TRIP</span>
       </Link>
     </LogoWrapper>
   )

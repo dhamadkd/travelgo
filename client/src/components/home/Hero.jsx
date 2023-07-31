@@ -8,8 +8,8 @@ const Hero = () => {
     <HeroWrapper>
       <Header home />
       <Content className='body-container'>
-        <h1>Start your adventure</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, est!</p>
+        <h1>Discover Amazing Places</h1>
+        <p>Plan Your Trip with us</p>
         <Link to='/tours'><button>Explore</button></Link>
       </Content>
     </HeroWrapper>
