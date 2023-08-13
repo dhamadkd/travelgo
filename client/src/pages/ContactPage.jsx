@@ -55,10 +55,10 @@ class ContactPage extends Component {
           onSubmit={this.onSubmit}
           alert={this.alertMessage()}
           forgotpass={this.goHome()}
-          linkto='/signup'
-          button1='Send'
-          auth
-          white
+          // linkto='/signup'
+          // button1='Send'
+          // auth
+          // white
         />
       </ContactPageTemplate>
     )

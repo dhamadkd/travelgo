@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { reduxForm } from 'redux-form'
 // import { Link } from 'react-router-dom'
-import { FormWrapper, ButtonWrapper, Button, AuthHr } from '../../globalStyle'
+import { FormWrapper, ButtonWrapper, Button} from '../../globalStyle'
 import Logo from '../nav/Logo'
 
 class ContactFormTemplate extends Component {
   render() {
-    const { title, alert, onSubmit, fields, forgotpass, button1, button2, linkto, white} = this.props;
+    const { title, alert, onSubmit, fields, forgotpass, button1} = this.props;
     return (
       <FormWrapper>
         <Logo largeLogo light/>
