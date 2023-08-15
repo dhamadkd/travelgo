@@ -43,7 +43,7 @@ exports.resizeTourImages = catchAsync(async (req, res, next) => {
     .resize(2000, 1333)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`client/public/tours/${req.files.imageCover.filename}`);
+    .toFile(`client/build/tours/${req.files.imageCover.filename}`);
 
   // 2) Images
   //TODO: NEEDS REFACTORING.
@@ -52,21 +52,21 @@ exports.resizeTourImages = catchAsync(async (req, res, next) => {
     .resize(2000, 1333)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`client/public/tours/${req.files.image1.filename}`);
+    .toFile(`client/build/tours/${req.files.image1.filename}`);
 
   req.files.image2.filename = `tour-${tourName}-${Date.now()}-2.jpeg`;
   await sharp(req.files.image2[0].buffer)
     .resize(2000, 1333)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`client/public/tours/${req.files.image2.filename}`);
+    .toFile(`client/build/tours/${req.files.image2.filename}`);
 
   req.files.image3.filename = `tour-${tourName}-${Date.now()}-3.jpeg`;
   await sharp(req.files.image3[0].buffer)
     .resize(2000, 1333)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`client/public/tours/${req.files.image3.filename}`);
+    .toFile(`client/build/tours/${req.files.image3.filename}`);
 
   next();
 });

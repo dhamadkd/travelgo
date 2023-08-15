@@ -44,7 +44,7 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
     .resize(500, 500)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`client/public/users/${req.file.filename}`);
+    .toFile(`client/build/users/${req.file.filename}`);
 
   next();
 })
