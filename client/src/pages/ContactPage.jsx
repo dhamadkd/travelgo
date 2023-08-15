@@ -56,7 +56,7 @@ class ContactPage extends Component {
           alert={this.alertMessage()}
           forgotpass={this.goHome()}
           // linkto='/signup'
-          // button1='Send'
+          button1='Send'
           // auth
           // white
         />

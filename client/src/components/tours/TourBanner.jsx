@@ -17,6 +17,9 @@ const TourBanner = ({ id, duration, processPayment, isSignedIn }) => {
       processPayment(id, stripePromise);
     }
   }
+  const redirectContact = async () => {
+      history.push('/contact')
+  }
 
   return (
     <Elements stripe={stripePromise}>
@@ -31,6 +34,9 @@ const TourBanner = ({ id, duration, processPayment, isSignedIn }) => {
             ? <button>Login to Book Tour Now</button>
             : <button>Book Tour Now</button>
           }
+        </BannerButton>
+          <BannerButton onClick={redirectContact}>
+             <button>Contact Us</button>
         </BannerButton>
       </BannerWrapper>
     </Elements>
