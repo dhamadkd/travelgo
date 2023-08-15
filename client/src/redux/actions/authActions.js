@@ -13,7 +13,7 @@ import {
   UPDATE_USER_FAIL
 } from '../type/types';
 import { setAuthToken } from '../../utils/setAuthToken';
-// import { setAlert } from './alertAction';
+import { setAlert } from './alertAction';
 import history from '../../history';
 
 // LOAD USER
@@ -49,7 +49,7 @@ export const logIn = (formValues) => async dispatch => {
   catch (err) {
     dispatch({ type: LOGIN_FAIL });
     const error = err.response.data;
-   //  if (error) dispatch(setAlert(error.message))
+    if (error) dispatch(setAlert(error.message))
   }
 }
 
@@ -85,7 +85,7 @@ export const signUp = formValues => async dispatch => {
   catch (err) {
     dispatch({ type: SIGNUP_FAIL });
     const error = err.response.data;
-   //  if (error) dispatch(setAlert(error.message))
+    if (error) dispatch(setAlert(error.message))
   }
 }
 
@@ -105,7 +105,7 @@ export const forgotPassword = formValues => async dispatch => {
   catch (err) {
     dispatch({ type: FORGOT_PASSWORD_FAIL });
     const error = err.response.data;
-   //  if (error) dispatch(setAlert(error.message))
+    if (error) dispatch(setAlert(error.message))
   }
 }
 
